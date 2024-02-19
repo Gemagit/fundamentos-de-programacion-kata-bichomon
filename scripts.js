@@ -17,10 +17,10 @@ console.log(window.location.href.length);
 
 let dominio = [];
 
-for (let i = window.location.href.length-1; i >= 0; i--) {
-     
+for (let i = window.location.href.length - 1; i >= 0; i--) {
+
     dominio.unshift(window.location.href[i]);
-    
+
     if (window.location.href[i] == ".") {
         break;
     }
@@ -34,19 +34,28 @@ console.log(".h,t,m,l".replaceAll(",", ""));
 
 //5-Imprime todos los nodos de imagen.
 
-console.log(document.querySelectorAll("img"));
+//console.log(document.querySelectorAll("img"));
 
 
 //6-Sustituye el atributo "src" de todas las imágenes por este "https://media.giphy.com/media/2v170e71aanfi/giphy.gif"
 
-let imagenes =document.getElementsByTagName("img");
+let imagenes = document.getElementsByTagName("img");
 
- for (let i=0;i<imagenes.length;i++) {
+for (let i = 0; i < imagenes.length; i++) {
     console.log(imagenes[i].src);
     imagenes[i].src = "https://media.giphy.com/media/2v170e71aanfi/giphy.gif";
- }
+}
 
- //7-Cambia el fondo de todos los infocard-lg-data text-muted para todos los Pokimon voladores itype flying
+//7-Cambia el fondo de todos los infocard-lg-data text-muted para todos los Pokimon voladores itype flying
 
- document.querySelectorAll(".infocard-lg-datatext-muted">".ent-name">".itype normal">".itypeflying").style.background = "red";
 
+function cambiarColor() {
+    let elements = document.querySelectorAll(".infocard-lg-data.text-muted")
+    for (let i = 0; i < elements.length; i++) {
+        if (elements[i].innerHTML.includes("itype flying")) {
+            elements[i].style.background = "red";
+        }
+    }
+}
+
+cambiarColor();
