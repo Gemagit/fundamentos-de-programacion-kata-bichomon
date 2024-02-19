@@ -1,4 +1,5 @@
 console.log(document.title);
+<<<<<<< HEAD
 
 
 //1-Cambia el título "Generation 1 Pokémon" por "Generasión 1 Pokimon".
@@ -59,3 +60,5 @@ function cambiarColor() {
 }
 
 cambiarColor();
+=======
+>>>>>>> 4d3f36fc5d8bb82ecb825c2b3b7cd6b6e7e668d6
