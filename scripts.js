@@ -1,6 +1,4 @@
 console.log(document.title);
-<<<<<<< HEAD
-
 
 //1-Cambia el título "Generation 1 Pokémon" por "Generasión 1 Pokimon".
 document.querySelector("#gen-1").innerHTML = "Generasión 1 Pokimon";
@@ -35,7 +33,7 @@ console.log(".h,t,m,l".replaceAll(",", ""));
 
 //5-Imprime todos los nodos de imagen.
 
-//console.log(document.querySelectorAll("img"));
+console.log(document.querySelectorAll("img"));
 
 
 //6-Sustituye el atributo "src" de todas las imágenes por este "https://media.giphy.com/media/2v170e71aanfi/giphy.gif"
@@ -60,5 +58,3 @@ function cambiarColor() {
 }
 
 cambiarColor();
-=======
->>>>>>> 4d3f36fc5d8bb82ecb825c2b3b7cd6b6e7e668d6
