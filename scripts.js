@@ -4,8 +4,10 @@ console.log(document.title);
 document.querySelector("#gen-1").innerHTML = "Generasión 1 Pokimon";
 
 
-//2-Cambia el título "Generation 1 Pokémon" por "Generasión 1 Pokimon".
-document.querySelector(".infocard-list-pkmn-lg").style.background = "yellow";
+//2-Cambia el color de fondo de la primera generación de Pokimon.
+document.querySelector(".infocard-list").style.background = "yellow";
+
+document.querySelector("#gen-1 ~ .infocard-list").style.background="yellow"
 
 //3-Imprime por consola la URL de la página.
 console.log(window.location.href);
@@ -51,8 +53,10 @@ for (let i = 0; i < imagenes.length; i++) {
 function cambiarColor() {
     let elements = document.querySelectorAll(".infocard-lg-data.text-muted")
     for (let i = 0; i < elements.length; i++) {
-        if (elements[i].innerHTML.includes("itype flying")) {
-            elements[i].style.background = "red";
+     //   if (elements[i].innerHTML.includes("itype flying")) {
+        const el=elements[i].querySelector(".flying");
+        if (el!==undefined) {
+            el.style.background = "red";
         }
     }
 }
